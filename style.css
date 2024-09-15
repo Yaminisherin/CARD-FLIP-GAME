@@ -1,0 +1,69 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box; 
+}
+body {
+    font-family:'Handjet',sans-serif ;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+    background-color: #8651E1;
+}
+
+.game-container {
+    text-align: center;
+}
+
+h1 {
+    margin-bottom: 20px;
+    font-size:50px
+}
+button {
+    background-color: #C0B8DD ;
+    border:none; 
+    border-radius: 5px;
+    padding: 10px 20px;
+    font-size: 16px;
+    font-weight:bold;
+    cursor:pointer;
+    color:#ffffff;
+    transition: background-color 0.3s,transform 0.2s;
+}
+.game-board {
+    display: grid;
+    grid-template-columns: repeat(4, 100px);
+    grid-gap: 10px;
+}
+
+.card {
+    width: 100px;
+    height: 100px;
+    background-color: #B185FF;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 24px;
+    color: white;
+    cursor: pointer;
+    border-radius: 10px;
+    transition: transform 0.4s;
+    transform-style: preserve-3d;
+}
+
+.card.flipped {
+    background-color: #DFB1FB;
+}
+
+.hidden {
+    visibility: hidden;
+}
+
+button {
+    margin-bottom: 20px;
+    padding: 10px 20px;
+    font-size: 16px;
+    cursor: pointer;
+}
